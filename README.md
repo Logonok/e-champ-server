@@ -46,9 +46,3 @@ node console/start
 ## Usage
 
 Web interface: [http://localhost:3000](http://localhost:3000)
-
-Sign in as administrator:
-```sh
-Email: a@a.a
-Password: 123456
-```
