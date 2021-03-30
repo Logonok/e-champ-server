@@ -9,6 +9,7 @@ module.exports = {
     bots: {
         ...defaults.bots,
 
-        'thrifty': require('e-champ-durak-thrifty/config/default')
+        'thrifty': require('e-champ-durak-thrifty/config/default'),
+        'hatter': require('./default-hatter'),
     }
 };
