@@ -3,6 +3,6 @@
 module.exports = [{
     name: 'Adam',
     email: 'a@a.a',
-    passwordHash: '7cdf7162fb3294763b3c2e234715e9089d9331c68db5f4e87f1c24eff2802aea',
+    passwordHash: '0a307ffa1284b4ac14cd951a3bb85bf776b0ddfb70e065f92d5eea9133b92c5ddede094a',
     verified: true
 }];

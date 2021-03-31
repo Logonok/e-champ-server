@@ -1,8 +1,8 @@
 'use strict';
 
-const Base = require('e-champ-durak/bot/Standard');
+const Base = require('e-champ-durak/bot/StandardSolver');
 
-module.exports = class Hatter extends Base {
+module.exports = class HatterSolver extends Base {
 
     constructor (config) {
         super({
@@ -20,8 +20,8 @@ module.exports = class Hatter extends Base {
         return validCards.slice(index, index + 1);
     }
 
-    getCardToDefend () {
-        const cards = this.getCardsToDefend(...arguments);
+    getCardToDefend (attacking, cards) {
+        cards = this.getCardsToDefend(attacking, cards);
         if (!cards.length || (this.stock > 0 && Math.random() < this.pickUpChance)) {
             return null;
         }

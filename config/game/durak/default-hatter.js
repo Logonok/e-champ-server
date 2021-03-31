@@ -4,7 +4,7 @@ module.exports = {
 
     label: 'Hatter',
     solver: {
-        Class: require('../../../bot/Hatter'),
+        Class: require('../../../bot/HatterSolver'),
         passChance: .5,
         pickUpChance: .2
     },
