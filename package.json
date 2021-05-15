@@ -1,6 +1,6 @@
 {
   "name": "e-champ-server",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "E-Champ server for turn-based online games",
   "author": "Logonok",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "url": "https://github.com/Logonok/e-champ-server.git"
   },
   "dependencies": {
-    "e-champ": "~1.3.0",
+    "e-champ": "~2.0.0",
     "e-champ-draughts": "~1.2.0",
     "e-champ-draughts-thinker": "~2.0.0",
     "e-champ-durak": "~1.3.0",
