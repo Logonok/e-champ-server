@@ -45,4 +45,4 @@ node console/start
 
 ## Usage
 
-Web interface: [http://localhost:3000](http://localhost:3000)
+Web interface `http://localhost:3000`
