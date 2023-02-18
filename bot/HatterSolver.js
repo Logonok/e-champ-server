@@ -13,8 +13,12 @@ module.exports = class HatterSolver extends Base {
     }
 
     getCardsToAttack (validCards) {
-        if (this.table.length && this.stock > 0 && Math.random() < this.passChance) {
-            return [];
+        if (this.table.length) {
+            if (this.stock > 0) {
+                if (Math.random() < this.passChance) {
+                    return [];
+                }
+            }
         }
         const index = Math.floor(Math.random() * validCards.length);
         return validCards.slice(index, index + 1);
@@ -22,9 +26,15 @@ module.exports = class HatterSolver extends Base {
 
     getCardToDefend (attacking, cards) {
         cards = this.getCardsToDefend(attacking, cards);
-        if (!cards.length || (this.stock > 0 && Math.random() < this.pickUpChance)) {
+        if (!cards.length) {
             return null;
         }
-        return cards[Math.floor(Math.random() * cards.length)];
+        if (this.stock > 0) {
+            if (Math.random() < this.pickUpChance) {
+                return null;
+            }
+        }
+        const index = Math.floor(Math.random() * cards.length);
+        return cards[index];
     }
 };
