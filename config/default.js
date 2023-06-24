@@ -20,6 +20,11 @@ module.exports = {
             }
         }
     },
+    modules: {
+        'club': {
+            Class: require('../module/club/Module')
+        }
+    },
     security: require('./default-security'),
     users: require('./default-users')
 };
