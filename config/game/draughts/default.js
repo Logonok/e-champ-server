@@ -6,6 +6,9 @@ module.exports = {
 
     ...defaults,
 
+    play: {
+        Class: require('../../../draughts/play/CustomDraughts')
+    },
     actions: {
         ...defaults.actions,
         'custom': {
