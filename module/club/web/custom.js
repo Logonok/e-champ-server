@@ -20,6 +20,11 @@ Club.PlayPage = class extends Club.PlayPage {
 
             finish () {
                 super.finish();
+
+                // get player IDs
+                const winnerId = this.data.winnerId;
+                const loserId = this.data.loserId;
+
                 //this.sendWebSocketMessage();
                 //this.sendPostMessage();
             }
