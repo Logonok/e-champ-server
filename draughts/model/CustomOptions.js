@@ -2,7 +2,7 @@
 
 const Base = require('e-champ-draughts/model/Options');
 
-module.exports = class Options extends Base {
+module.exports = class CustomOptions extends Base {
 
     static getConstants () {
         return {
@@ -26,11 +26,6 @@ module.exports = class Options extends Base {
                 label: 'Dark turn first',
                 view: 'checkbox',
                 format: 'boolean'
-            }, {
-                name: 'initialPosition',
-                label: 'Initial position',
-                hint: 'Lc1, Le1+, Df8, Dd8+',
-                view: 'string'
             }],
             RULES: [
                 [['losing', 'backCapture', 'optionalCapture', 'darkFirst'],  'checkbox']
