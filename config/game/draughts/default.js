@@ -6,6 +6,9 @@ module.exports = {
 
     ...defaults,
 
+    optionModel: {
+        Class: require('../../../draughts/model/CustomOptions')
+    },
     play: {
         Class: require('../../../draughts/play/CustomDraughts')
     },
@@ -23,5 +26,6 @@ module.exports = {
         'thinker-level-5': require('./default-bot-thinker-5')
     },
     defaultBot: 'thinker-level-1',
-    defaultOpponents: []
+    defaultOpponents: [],
+    webPage: null
 };
