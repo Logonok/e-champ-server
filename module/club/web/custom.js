@@ -22,8 +22,7 @@ Club.PlayPage = class extends Club.PlayPage {
                 super.finish();
 
                 // get player IDs
-                const winnerId = this.data.winnerId;
-                const loserId = this.data.loserId;
+                const {winnerId, loserId} = this.data;
 
                 //this.sendWebSocketMessage();
                 //this.sendPostMessage();
@@ -35,7 +34,7 @@ Club.PlayPage = class extends Club.PlayPage {
 
             sendPostMessage () {
                 const fetch = new Jam.Fetch;
-                const data = this.data;
+                const {data} = this;
                 return fetch.getText('/custom/some-request', {data})
                     .then(result => {
                         console.log('Request is done', result);

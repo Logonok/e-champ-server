@@ -1,6 +1,6 @@
 {
   "name": "e-champ-server",
-  "version": "3.5.0",
+  "version": "3.5.1",
   "description": "E-Champ server for turn-based online games",
   "author": "Logonok",
   "license": "MIT",
